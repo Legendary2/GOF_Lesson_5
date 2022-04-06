@@ -20,7 +20,7 @@ void Plane::Draw() const
     cout << "////";
 }
 
-void __fastcall Plane::Accept(const Visitor& visitor)
+void __fastcall Plane::Accept(const Visitor& v)
 {
     visitor.logging(*this);
 }
