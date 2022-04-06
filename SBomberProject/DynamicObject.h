@@ -31,7 +31,7 @@ public:
         return yDirection;
     }
 
-    virtual void Accept(const Visitor& v) = 0;
+    virtual void Accept(const Visitor& visitor) = 0;
 
 protected:
 

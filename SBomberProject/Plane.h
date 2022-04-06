@@ -9,8 +9,9 @@ public:
 
     inline void ChangePlaneY(double dy) { yDirection += dy; }
 
-    void Accept(const Visitor& v) override;
+    void Accept(const Visitor& visitor) override;
 
 private:
 
 };
+

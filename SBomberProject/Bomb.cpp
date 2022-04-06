@@ -15,9 +15,9 @@ void Bomb::Draw() const
     cout << "*";
 }
 
-void __fastcall Bomb::Accept(const Visitor& v)
+void __fastcall Bomb::Accept(const Visitor& visitor)
 {
-    v.logging(*this);
+    visitor.logging(*this);
 }
 
 DestroyableGroundObject* Bomb::CheckDestroyableObjects()
